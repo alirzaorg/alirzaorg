@@ -1,6 +1,6 @@
 Alireza Alavi
 
-23-year-old Software Engineer
+22-year-old Software Engineer
 
 Python | Java | Swift
 
