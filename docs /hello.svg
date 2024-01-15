@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Officialize SVG Code</title>
+<style>
+body {
+  font-family: sans-serif;
+}
+
+.svg-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.svg-item {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #ccc;
+}
+
+.svg-item img {
+  width: 100%;
+  height: 100%;
+}
+</style>
+</head>
+<body>
+<h1>Officialize SVG Code</h1>
+
+<div class="svg-container">
+  {% for symbol in symbols %}
+    <div class="svg-item">
+      <svg viewBox="0 0 6 13">
+        <use xlink:href="#{{ symbol.id }}"></use>
+      </svg>
+      <p>{{ symbol.name }}</p>
+    </div>
+  {% endfor %}
+</div>
+
+<script>
+const symbols = [
+  { id: 'glyph10', name: 'Number 10' },
+  { id: 'glyph32', name: 'Space' },
+  { id: 'glyph33', name: 'Exclamation mark' },
+  { id: 'glyph46', name: '.' },
+  { id: 'glyph72', name: 'R' },
+  { id: 'glyph84', name: 'T' },
+  { id: 'glyph87', name: 'W' },
+  { id: 'glyph97', name: 'a' },
+  { id: 'glyph99', name: 'c' },
+  { id: 'glyph100', name: 'd' },
+  { id: 'glyph101', name: 'e' },
+  { id: 'glyph104', name: 'i' },
+  { id: 'glyph107', name: 'j' },
+  { id: 'glyph108', name: 'l' },
+  { id: 'glyph109', name: 'm' },
+];
+
+const svgContainer = document.querySelector('.svg-container');
+
+symbols.forEach(symbol => {
+  const svgElement = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+  svgElement.setAttribute('viewBox', `0 0 ${symbol.width} ${symbol.height}`);
+  svgElement.innerHTML = `<use xlink:href="#${symbol.id}"></use>`;
+
+  const imgElement = document.createElement('img');
+  imgElement.src = window.URL.createObjectURL(svgElement);
+
+  const svgItem = document.createElement('div');
+  svgItem.classList.add('svg-item');
+  svgItem.appendChild(imgElement);
+  svgItem.appendChild(document.createTextNode(` ${symbol.name}`));
+
+  svgContainer.appendChild(svgItem);
+});
+</script>
+</body>
+</html>
