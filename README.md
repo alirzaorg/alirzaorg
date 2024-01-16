@@ -27,6 +27,6 @@ I'm always looking for new challenges and opportunities to learn and grow. I'm a
 
 Feel free to browse my GitHub profile to learn more about my work and experience. I'm always looking for new collaborators and contributors, so please don't hesitate to reach out if you have any questions or project ideas.
 
-p.s: I'm currently working on new Machine learning algorythm for prosthetic robotic hand which I'll share the project soon enough.
+p.s: I'm currently working on a new Machine learning algorithm which use for prosthetic robotic hand and I'll share the project soon enough here.
 
 <b>
