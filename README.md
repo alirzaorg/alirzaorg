@@ -21,11 +21,11 @@
 <h2>🌏 Find me</h2>
 <a href="mailto:alirzaorg@gmail.com"><img src="https://user-images.githubusercontent.com/74541595/179397245-37cdb849-4283-4f70-956c-f2e739e44401.png" alt="icons8-gmail-48" style="max-width: 100%;"></a>
  
-Hi there! I'm Alireza Alavi, a 22-year-old software engineer with a passion for building innovative and user-friendly products. I'm proficient in Python, Java, and Swift, and I have experience developing web applications, mobile apps, and machine learning models.
+Hi there! I'm Alireza Alavi, Senior Robotic engineer with a passion for building innovative and user-friendly products. I'm proficient in Python, Java, and C++, and I have experience developing machine learning models.
 
 I'm always looking for new challenges and opportunities to learn and grow. I'm also a big believer in open source software, and I'm always happy to contribute to projects that I'm passionate about.
 
 Feel free to browse my GitHub profile to learn more about my work and experience. I'm always looking for new collaborators and contributors, so please don't hesitate to reach out if you have any questions or project ideas.
-
+p.s: I'm currently working on new Machine learning algorythm for prosthetic robotic hand which I'll share the project soon enough.
 
 <b>
